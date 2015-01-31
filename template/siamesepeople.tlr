@@ -1,0 +1,3 @@
+<:=resource file=".\\input\\head.htm" parameter2=" class=&quot;displayhighlight&quot;"=:>
+<:=resource file=".\\input\\siamesepeoplebody.htm" =:>
+<:=resource file=".\\input\\tail.htm" =:>
