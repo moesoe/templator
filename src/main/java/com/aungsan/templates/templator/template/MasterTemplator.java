@@ -51,7 +51,8 @@ public class MasterTemplator {
 			{ "welcomeindia.tlr", "welcomeindia.htm" },
 			{ "critiquebritish.tlr", "critiquebritish.htm" },
 			{ "probburma.tlr", "probburma.htm" },
-			{ "resmovement.tlr", "resmovement.htm" }};
+			{ "resmovement.tlr", "resmovement.htm" },
+			{"as18.tlr","as18.htm"}};
 
 	/**
 	 * @param args
