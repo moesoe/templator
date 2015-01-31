@@ -52,7 +52,15 @@ public class MasterTemplator {
 			{ "critiquebritish.tlr", "critiquebritish.htm" },
 			{ "probburma.tlr", "probburma.htm" },
 			{ "resmovement.tlr", "resmovement.htm" },
-			{"as18.tlr","as18.htm"}};
+			{ "as18.tlr", "as18.htm" }, { "as10.tlr", "as10.htm" },
+			{ "as03.tlr", "as03.htm" }, { "as17.tlr", "as17.htm" },
+			{ "as11.tlr", "as11.htm" }, { "as02.tlr", "as02.htm" },
+			{ "as09.tlr", "as09.htm" }, { "as04.tlr", "as04.htm" },
+			{ "as13.tlr", "as13.htm" }, { "as12.tlr", "as12.htm" },
+			{ "as15.tlr", "as15.htm" }, { "as05.tlr", "as05.htm" },
+			{ "as06.tlr", "as06.htm" }, { "as14.tlr", "as14.htm" },
+			{ "as16.tlr", "as16.htm" }, { "as08.tlr", "as08.htm" },
+			{ "as07.tlr", "as07.htm" } };
 
 	/**
 	 * @param args
@@ -103,7 +111,8 @@ public class MasterTemplator {
 
 			String resourceItem;
 
-			while ((resourceItem = buffreader.readLine()) != null) {
+			while (((resourceItem = buffreader.readLine()) != null)
+					&& (resourceItem.trim().length() > 0)) {
 
 				processResource(resourceItem, buffwrite);
 
