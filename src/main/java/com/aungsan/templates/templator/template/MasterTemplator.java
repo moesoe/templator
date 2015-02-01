@@ -145,7 +145,7 @@ public class MasterTemplator {
 		int posOpenTag = inputLine.indexOf(OPEN_TAG);
 		int posCloseTag = inputLine.indexOf(CLOSE_TAG, posOpenTag + 3);
 
-		if (posOpenTag > 0 && posCloseTag > 0) {
+		while (posOpenTag > 0 && posCloseTag > 0) {
 			String parameter = inputLine.substring(posOpenTag + 3, posCloseTag)
 					.trim();
 			int paramIndex = PARAMETERS_LIST.indexOf(parameter);
@@ -157,6 +157,9 @@ public class MasterTemplator {
 						inputLine.substring(posOpenTag, posCloseTag + 3),
 						paramValue);
 			}
+			
+			posOpenTag = inputLine.indexOf(OPEN_TAG);
+			posCloseTag = inputLine.indexOf(CLOSE_TAG, posOpenTag + 3);			
 		}
 
 		return inputLine;
