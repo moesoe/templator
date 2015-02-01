@@ -60,7 +60,11 @@ public class MasterTemplator {
 			{ "as15.tlr", "as15.htm" }, { "as05.tlr", "as05.htm" },
 			{ "as06.tlr", "as06.htm" }, { "as14.tlr", "as14.htm" },
 			{ "as16.tlr", "as16.htm" }, { "as08.tlr", "as08.htm" },
-			{ "as07.tlr", "as07.htm" } };
+			{ "as07.tlr", "as07.htm" }, { "lifesketch.tlr", "lifesketch.htm" },
+			{ "britannica.tlr", "britannica.htm" },
+			{ "msencarta99.tlr", "msencarta99.htm" },
+			{ "y2kgrolier.tlr", "y2kgrolier.htm" },
+			{ "viewguestbook.tlr", "viewguestbook.htm" } };
 
 	/**
 	 * @param args
@@ -111,11 +115,10 @@ public class MasterTemplator {
 
 			String resourceItem;
 
-			while (((resourceItem = buffreader.readLine()) != null)
-					&& (resourceItem.trim().length() > 0)) {
-
-				processResource(resourceItem, buffwrite);
-
+			while ((resourceItem = buffreader.readLine()) != null) {
+				if (resourceItem.trim().length() > 0) {
+					processResource(resourceItem, buffwrite);
+				}
 			}
 
 			buffreader.close();
@@ -157,9 +160,9 @@ public class MasterTemplator {
 						inputLine.substring(posOpenTag, posCloseTag + 3),
 						paramValue);
 			}
-			
+
 			posOpenTag = inputLine.indexOf(OPEN_TAG);
-			posCloseTag = inputLine.indexOf(CLOSE_TAG, posOpenTag + 3);			
+			posCloseTag = inputLine.indexOf(CLOSE_TAG, posOpenTag + 3);
 		}
 
 		return inputLine;
