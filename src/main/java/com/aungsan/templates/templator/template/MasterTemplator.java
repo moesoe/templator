@@ -34,7 +34,7 @@ public class MasterTemplator {
 	private static final String DOUBLE_QUOTE = "&quot;";
 	private static final String[] PARAMETERS = { "parameter1", "parameter2",
 			"parameter3", "parameter4", "parameter5", "parameter6",
-			"parameter7", "parameter8", "parameter9", "parameter10" };
+			"parameter7", "parameter8", "parameter9", "parameter10", "self" };
 	private static final List<String> PARAMETERS_LIST = Arrays
 			.asList(PARAMETERS);
 	private static final String[][] TEMPALTE_MAP = {
@@ -83,7 +83,7 @@ public class MasterTemplator {
 
 		long start = System.currentTimeMillis();
 
-		process(templateFileName, outputFileName);
+		process(templateFileName, outputFileName, outputName);
 
 		long stop = System.currentTimeMillis();
 
@@ -92,7 +92,7 @@ public class MasterTemplator {
 				+ " milliseconds.");
 	}
 
-	private static void process(String templateFilename, String outputFileName) {
+	private static void process(String templateFilename, String outputFileName, String outputName) {
 		InputStream inStream = null;
 		InputStreamReader inputreader;
 		BufferedReader buffreader;
@@ -117,7 +117,7 @@ public class MasterTemplator {
 
 			while ((resourceItem = buffreader.readLine()) != null) {
 				if (resourceItem.trim().length() > 0) {
-					processResource(resourceItem, buffwrite);
+					processResource(resourceItem, buffwrite, outputName);
 				}
 			}
 
@@ -134,13 +134,18 @@ public class MasterTemplator {
 		}
 	}
 
-	private static String[] getParameters(String resourceItem) {
-		String[] values = new String[10];
+	private static String[] getParameters(String resourceItem, String outputName) {
+		String[] values = new String[PARAMETERS.length];
 
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < values.length; i++) {
 			values[i] = getResourceAttributes(resourceItem, PARAMETERS[i]);
 		}
-
+		
+		if (values[PARAMETERS.length-1] == null) {
+			//set self parameter as outputName
+			values[PARAMETERS.length-1] = outputName;
+		}
+			
 		return values;
 	}
 
@@ -169,7 +174,7 @@ public class MasterTemplator {
 	}
 
 	private static void processResource(String resourceItem,
-			BufferedWriter outputWriter) {
+			BufferedWriter outputWriter, String outputName) {
 		String resourceFileName = getResourceAttributes(resourceItem,
 				ATTR_NAME_FILE);
 
@@ -184,7 +189,7 @@ public class MasterTemplator {
 			inputreader = new InputStreamReader(inStream, CHAR_SET_UTF_8);
 			buffreader = new BufferedReader(inputreader);
 
-			String[] values = getParameters(resourceItem);
+			String[] values = getParameters(resourceItem, outputName);
 			String outputLine;
 
 			while ((outputLine = buffreader.readLine()) != null) {
