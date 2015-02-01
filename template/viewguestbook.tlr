@@ -1,3 +1,12 @@
 <:=resource file=".\\input\\head.htm" parameter6=" class=&quot;displayhighlight&quot;"=:>
-<:=resource file=".\\input\\viewguestbookbody.htm" =:>
+<:=resource file=".\\input\\viewguestbookbodybegin.htm" =:>
+<:=resource file=".\\input\\guestbookextract2008.htm" =:>
+<:=resource file=".\\input\\guestbookextract2007.htm" =:>
+<:=resource file=".\\input\\guestbookextract2006.htm" =:>
+<:=resource file=".\\input\\guestbookextract2005.htm" =:>
+<:=resource file=".\\input\\guestbookextract2004.htm" =:>
+<:=resource file=".\\input\\guestbookextract2003.htm" =:>
+<:=resource file=".\\input\\guestbookextract2002.htm" =:>
+<:=resource file=".\\input\\guestbookextract2001.htm" =:>
+<:=resource file=".\\input\\viewguestbookbodyend.htm" =:>
 <:=resource file=".\\input\\tail.htm" =:>
