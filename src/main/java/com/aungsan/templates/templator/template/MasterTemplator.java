@@ -42,7 +42,8 @@ public class MasterTemplator {
 			{ "photo.tlr", "photo.htm" }, { "timeline.tlr", "timeline.htm" },
 			{ "perspectives.tlr", "perspectives.htm" },
 			{ "guestbook.tlr", "guestbook.htm" }, { "links.tlr", "links.htm" },
-			{ "quotes.tlr", "quotes.htm" },
+			{ "quotes.tlr", "quotes.htm" }, { "quotes2.tlr", "quotes2.htm" },
+			{ "quotes3.tlr", "quotes3.htm" },
 			{ "siamesepeople.tlr", "siamesepeople.htm" },
 			{ "asiaticunity.tlr", "asiaticunity.htm" },
 			{ "fascistbarbarism.tlr", "fascistbarbarism.htm" },
@@ -92,7 +93,8 @@ public class MasterTemplator {
 				+ " milliseconds.");
 	}
 
-	private static void process(String templateFilename, String outputFileName, String outputName) {
+	private static void process(String templateFilename, String outputFileName,
+			String outputName) {
 		InputStream inStream = null;
 		InputStreamReader inputreader;
 		BufferedReader buffreader;
@@ -140,12 +142,12 @@ public class MasterTemplator {
 		for (int i = 0; i < values.length; i++) {
 			values[i] = getResourceAttributes(resourceItem, PARAMETERS[i]);
 		}
-		
-		if (values[PARAMETERS.length-1] == null) {
-			//set self parameter as outputName
-			values[PARAMETERS.length-1] = outputName;
+
+		if (values[PARAMETERS.length - 1] == null) {
+			// set self parameter as outputName
+			values[PARAMETERS.length - 1] = outputName;
 		}
-			
+
 		return values;
 	}
 
