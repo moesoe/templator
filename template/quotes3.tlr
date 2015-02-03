@@ -1,0 +1,3 @@
+<:=resource file=".\\input\\head.htm"=:>
+<:=resource file=".\\input\\quotes3body.htm" =:>
+<:=resource file=".\\input\\tail.htm" =:>
