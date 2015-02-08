@@ -65,7 +65,8 @@ public class MasterTemplator {
 			{ "britannica.tlr", "britannica.htm" },
 			{ "msencarta99.tlr", "msencarta99.htm" },
 			{ "y2kgrolier.tlr", "y2kgrolier.htm" },
-			{ "viewguestbook.tlr", "viewguestbook.htm" } };
+			{ "viewguestbook.tlr", "viewguestbook.htm" },
+			{ "as01.tlr", "as01.htm" }};
 
 	/**
 	 * @param args
