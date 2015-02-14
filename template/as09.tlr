@@ -1,3 +1,3 @@
-<:=resource file=".\\input\\head.htm" parameter3=" class=&quot;displayhighlight&quot;" parameter8="#as09.htm"=:>
+<:=resource file=".\\input\\head.htm" parameter3=" class=&quot;active&quot;" parameter8="#as09.htm"=:>
 <:=resource file=".\\input\\photopagebody.htm" parameter1="as8gs.jpg" parameter2="Wedding Photograph of Bogyoke Aung San and Daw Khin Kyi. (September 1942)" =:>
 <:=resource file=".\\input\\tail.htm" =:>

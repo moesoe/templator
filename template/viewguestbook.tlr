@@ -1,4 +1,4 @@
-<:=resource file=".\\input\\head.htm" parameter6=" class=&quot;displayhighlight&quot;"=:>
+<:=resource file=".\\input\\head.htm" parameter6=" class=&quot;active&quot;"=:>
 <:=resource file=".\\input\\viewguestbookbodybegin.htm" =:>
 <:=resource file=".\\input\\guestbookextract2008.htm" =:>
 <:=resource file=".\\input\\guestbookextract2007.htm" =:>
