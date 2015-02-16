@@ -1,3 +1,3 @@
-<:=resource file=".\\input\\head.htm" parameter3=" class=&quot;displayhighlight&quot;" parameter8="#as07.htm"=:>
+<:=resource file=".\\input\\head.htm" parameter3=" class=&quot;active&quot;" parameter8="#as07.htm"=:>
 <:=resource file=".\\input\\photopagebody.htm" parameter1="assk.jpg" parameter2="Daw Aung San Suu Kyi, the youngest child of Bogyoke Aung San, recipient of the 1991 Nobel Peace Prize." =:>
 <:=resource file=".\\input\\tail.htm" =:>

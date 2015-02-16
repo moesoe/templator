@@ -108,7 +108,7 @@ public class MasterTemplator {
 
 			File afile = new File(templateFilename);
 			inStream = new FileInputStream(afile);
-			inputreader = new InputStreamReader(inStream, CHAR_SET_UTF_8);
+			inputreader = new InputStreamReader(inStream, CHAR_SET_UTF_8);			
 			buffreader = new BufferedReader(inputreader);
 
 			File bfile = new File(outputFileName);
@@ -189,7 +189,7 @@ public class MasterTemplator {
 
 			File afile = new File(resourceFileName);
 			inStream = new FileInputStream(afile);
-			inputreader = new InputStreamReader(inStream, CHAR_SET_UTF_8);
+			inputreader = new InputStreamReader(inStream, CHAR_SET_UTF_8);			
 			buffreader = new BufferedReader(inputreader);
 
 			String[] values = getParameters(resourceItem, outputName);
