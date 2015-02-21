@@ -77,6 +77,7 @@ public class MasterTemplator {
 			processTemplate(TEMPALTE_MAP[i][0], TEMPALTE_MAP[i][1]);
 		}
 
+		System.out.println("\nTemplator completed successfully.");
 	}
 
 	private static void processTemplate(String templateName, String outputName) {
