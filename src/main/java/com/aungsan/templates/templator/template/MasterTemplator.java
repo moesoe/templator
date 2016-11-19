@@ -37,7 +37,7 @@ public class MasterTemplator {
 			"parameter7", "parameter8", "parameter9", "parameter10", "self" };
 	private static final List<String> PARAMETERS_LIST = Arrays
 			.asList(PARAMETERS);
-	private static final String[][] TEMPALTE_MAP = {
+/*	private static final String[][] TEMPALTE_MAP = {
 			{ "index.tlr", "index.htm" }, { "speeches.tlr", "speeches.htm" },
 			{ "photo.tlr", "photo.htm" }, { "timeline.tlr", "timeline.htm" },
 			{ "perspectives.tlr", "perspectives.htm" },
@@ -66,8 +66,36 @@ public class MasterTemplator {
 			{ "msencarta99.tlr", "msencarta99.htm" },
 			{ "y2kgrolier.tlr", "y2kgrolier.htm" },
 			{ "viewguestbook.tlr", "viewguestbook.htm" },
-			{ "as01.tlr", "as01.htm" }};
+			{ "as01.tlr", "as01.htm" },
+			{ "indexjul19.tlr", "indexjul19.htm" },
+			{ "paradespeech.tlr", "paradespeech.htm" }};*/
 
+/*	private static final String[][] TEMPALTE_MAP = {
+			{ "index.tlr", "index.htm" },
+			{ "paradespeech.tlr", "paradespeech.htm"},
+			{ "divcommanders.tlr", "divcommanders.htm"},
+			{ "thayetchaung.tlr", "thayetchaung.htm"},
+			{ "peoplesfreedom.tlr", "peoplesfreedom.htm"},
+			{ "afpflspeech.tlr", "afpflspeech.htm"},
+			{ "electionchallenge.tlr", "electionchallenge.htm"}};	*/
+	
+/*	private static final String[][] TEMPALTE_MAP = {
+			{ "fallensoldiers.tlr", "fallensoldiers.htm"},
+			{ "middleterrace.tlr", "middleterrace.htm"},
+			{ "nationalunity.tlr", "nationalunity.htm"}};	*/
+	
+/*	private static final String[][] TEMPALTE_MAP = {
+			{ "mayday.tlr", "mayday.htm"},
+			{ "educationpolitics.tlr", "educationpolitics.htm"},
+			{ "beforemayday.tlr", "beforemayday.htm"},
+			{ "redbloodday.tlr", "redbloodday.htm"},
+			{ "rakhinestate.tlr", "rakhinestate.htm"}};
+*/	
+	private static final String[][] TEMPALTE_MAP = {
+			{ "independencefirst.tlr", "independencefirst.htm" },
+			{ "thanbyuzayat.tlr", "thanbyuzayat.htm"},
+			{ "strongforopportunity.tlr", "strongforopportunity.htm"}};	
+	
 	/**
 	 * @param args
 	 */
